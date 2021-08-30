@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- --------------------------- CSS STYLESHEET ---------------------------- -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom-query.css" />
+    <title>COVID-19 LIVE</title>
+  </head>
+  <body>
+    <header>
+      <!-- ---------------------------- MAIN CONTENT ----------------------------- -->
+      <main>
+        <h1 class="text-center">Covid-19 Live Update!</h1>
+        <div class="input-group my-4 w-50 mx-auto">
+          <input
+            id="input-field"
+            type="text"
+            class="form-control"
+            placeholder="enter country name"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            onclick="loadData()"
+            class="btn-yellow"
+            type="button"
+            id="button-addon2"
+          >
+            Search
+          </button>
+        </div>
+
+        <h2 id="diff-message" class="text-center">
+          Enter Country Name to see Coronavirus Cases..
+        </h2>
+
+        <section id="container">
+          <img
+            id="poster"
+            class="poster mx-auto my-5"
+            src="images/yellow-poster.png"
+            alt=""
+          />
+        </section>
+      </main>
+
+      <!-- ------------------------------- FOOTER -------------------------------- -->
+      <footer>
+        <small>&copy;All rights reserved by Alif Bin Hossain.</small>
+      </footer>
+    </header>
+
+    <!-- ------------------------------ JS FILES ------------------------------- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

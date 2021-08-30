@@ -1,0 +1,27 @@
+/* ------------------------------- MEDIA QUERY ------------------------------ */
+@media (max-width: 668px) {
+  header {
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+  }
+  .input-group {
+    width: 100% !important;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 0.6rem;
+  }
+  h3 {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .poster {
+    width: 100%;
+  }
+  footer {
+    font-size: 0.5rem;
+  }
+}

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* ------------------------------- BASE & TYPO ------------------------------ */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: 1.6;
+}
+
+header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(30, 111, 92, 0.75),
+      rgba(41, 187, 137, 0.75)
+    ),
+    url(../images/banner.jpg);
+  height: 100vh;
+  color: #fff;
+  padding: 3rem;
+  position: relative;
+}
+h1 {
+  font-weight: 600;
+}
+h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+h3 {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.65),
+    rgba(255, 255, 255, 0.85)
+  );
+  border-bottom: 3px solid darkslategray;
+  border-radius: 3px;
+  margin: 0.8rem 0;
+  text-align: center;
+}
+span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  font-weight: 200;
+}
+.btn-yellow {
+  background-color: #e6dd3b;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.spinner-border {
+  font-size: 0.8rem;
+}
+
+/* ------------------------------- COMPONENTS ------------------------------- */
+.result {
+  width: max-content;
+  margin: 2rem auto;
+  color: #1e6f5c;
+}
+
+.poster {
+  display: block;
+  width: 50%;
+}
