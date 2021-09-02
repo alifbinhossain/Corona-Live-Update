@@ -1,13 +1,24 @@
 /* --------------------------- REUSABLE VARIABLES --------------------------- */
+const toggleBanner = (displayPro, imgSrc) => {
+  document.getElementById("banner").style.display = displayPro;
+  document.getElementById("banner").innerHTML = ` <img
+  id="poster"
+  class="poster mx-auto my-5 "
+  src="images/${imgSrc}.png"
+  alt=""
+  />`;
+};
+const container = document.getElementById("container");
 const diffMessage = document.getElementById("diff-message");
-const poster = document.getElementById("poster");
-const spinner = `<div class="spinner-border text-light" role="status">
+const spinner = `<div class="spinner-border text-light mt-3" role="status">
                     <span class="visually-hidden">Loading...</span>
                  </div>`;
 let inputValue;
+toggleBanner("block", "yellow-poster");
 
 /* -------------------------------- LOAD DATA ------------------------------- */
 const loadData = () => {
+  container.innerHTML = "";
   const inputField = document.getElementById("input-field");
   const countryName = inputField.value;
   inputField.value = "";
@@ -16,7 +27,8 @@ const loadData = () => {
   if (countryName == "") {
     diffMessage.textContent = `Please enter country name`;
   } else {
-    diffMessage.innerHTML = spinner;
+    diffMessage.innerHTML = `Please wait for a moment.. <br>
+                             ${spinner}`;
     inputValue = countryName;
     fetch(url)
       .then((res) => res.json())
@@ -26,10 +38,9 @@ const loadData = () => {
 
 /* ------------------------------ DISPLAY DATA ------------------------------ */
 const displayData = (data) => {
-  const container = document.getElementById("container");
-
   if (Array.isArray(data) == false) {
-    diffMessage.innerText = `Sorry ${inputValue} is not found.`;
+    diffMessage.innerHTML = `<h2>Sorry <span class="text-warning fw-bold">${inputValue}</span> is not found.</h2>`;
+    toggleBanner("block", "not-found-2");
   } else if (Array.isArray(data)) {
     diffMessage.innerText = `Result: ${inputValue}`;
     container.innerHTML = "";
@@ -47,6 +58,7 @@ const displayData = (data) => {
    <h3>Total Deaths:<span class="text-danger">${totalDeath}</span></h3>
    <h3>Recovered:<span>${totalRecoverd}</span></h3>
    `;
+    toggleBanner("none");
     container.appendChild(resultDiv);
   }
 };

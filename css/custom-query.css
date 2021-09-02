@@ -1,7 +1,7 @@
 /* ------------------------------- MEDIA QUERY ------------------------------ */
 @media (max-width: 668px) {
   header {
-    padding: 2rem;
+    padding: 2rem 1rem;
     display: grid;
     place-items: center;
   }
@@ -15,13 +15,20 @@
     font-size: 0.6rem;
   }
   h3 {
-    padding: 1rem;
+    padding: 0.9rem;
+    font-size: 0.8rem;
+    width: 20rem;
+  }
+  h3 span {
     font-size: 1rem;
+    font-weight: 500;
+    padding: 0 0.5rem;
   }
   .poster {
     width: 100%;
   }
   footer {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 300;
   }
 }

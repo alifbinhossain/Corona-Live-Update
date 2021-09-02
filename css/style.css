@@ -4,21 +4,20 @@
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
   line-height: 1.6;
-}
-
-header {
   background-image: linear-gradient(
       to bottom,
       rgba(30, 111, 92, 0.75),
       rgba(41, 187, 137, 0.75)
     ),
     url(../images/banner.jpg);
-  height: 100vh;
   color: #fff;
+}
+
+header {
+  min-height: 100vh;
   padding: 3rem;
-  position: relative;
 }
 h1 {
   font-weight: 600;
@@ -42,17 +41,10 @@ h3 {
   margin: 0.8rem 0;
   text-align: center;
 }
-span {
+h3 span {
   font-size: 1.5rem;
   font-weight: 500;
   padding: 0 1rem;
-}
-footer {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 1rem;
-  font-weight: 200;
 }
 .btn-yellow {
   background-color: #e6dd3b;
