@@ -46,6 +46,9 @@ h3 span {
   font-weight: 500;
   padding: 0 1rem;
 }
+footer {
+  font-weight: 200;
+}
 .btn-yellow {
   background-color: #e6dd3b;
   padding: 0.8rem 1.2rem;
